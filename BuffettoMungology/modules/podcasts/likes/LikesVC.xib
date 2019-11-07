@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LikesVC" customModule="BuffettoMungology" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="MyB-rG-pv2" id="den-AC-V8w"/>
+                <outlet property="topHead" destination="E97-CV-Wp9" id="53k-hS-zAh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lmw-z3-CAL">
+                    <rect key="frame" x="0.0" y="50" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaS-nn-pWt">
+                            <rect key="frame" x="10" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="6KJ-UW-xMA"/>
+                                <constraint firstAttribute="height" constant="40" id="aHA-oO-6GL"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                            <state key="normal" image="icon.png">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onBack:" destination="-1" eventType="touchUpInside" id="LAG-WS-63w"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="NaS-nn-pWt" firstAttribute="leading" secondItem="Lmw-z3-CAL" secondAttribute="leading" constant="10" id="Fpp-3Q-OkQ"/>
+                        <constraint firstAttribute="height" constant="50" id="aOn-5I-d04"/>
+                        <constraint firstItem="NaS-nn-pWt" firstAttribute="top" secondItem="Lmw-z3-CAL" secondAttribute="top" id="r9F-eY-KTz"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BuffettoMungology" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcF-OG-NpI">
+                    <rect key="frame" x="129" y="64.333333333333329" width="156.33333333333337" height="21.666666666666671"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="MyB-rG-pv2">
+                    <rect key="frame" x="0.0" y="110" width="414" height="626"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ChG-pT-MbS">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Lmw-z3-CAL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="E97-CV-Wp9"/>
+                <constraint firstItem="Lmw-z3-CAL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Gg5-W6-kEG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MyB-rG-pv2" secondAttribute="trailing" id="Ldb-hi-SVZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Lmw-z3-CAL" secondAttribute="trailing" id="Lv9-39-vsZ"/>
+                <constraint firstItem="lcF-OG-NpI" firstAttribute="centerY" secondItem="Lmw-z3-CAL" secondAttribute="centerY" id="TEz-0f-7MF"/>
+                <constraint firstItem="MyB-rG-pv2" firstAttribute="top" secondItem="Lmw-z3-CAL" secondAttribute="bottom" constant="10" id="TWx-3j-8dV"/>
+                <constraint firstItem="lcF-OG-NpI" firstAttribute="centerX" secondItem="Lmw-z3-CAL" secondAttribute="centerX" id="YSR-h2-bpj"/>
+                <constraint firstItem="MyB-rG-pv2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Zgz-V9-lHS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="MyB-rG-pv2" secondAttribute="bottom" id="un1-Ln-U7b"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="142.66304347826087"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon.png" width="166" height="151"/>
+    </resources>
+</document>

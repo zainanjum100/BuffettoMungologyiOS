@@ -1,0 +1,6 @@
+framework module Pods_BuffettoMungology {
+  umbrella header "Pods-BuffettoMungology-umbrella.h"
+
+  export *
+  module * { export * }
+}
